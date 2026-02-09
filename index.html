@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Hunt 2D</title>
+    <style>
+      html,body{margin:0;height:100%;background:#0f172a;color:#e2e8f0;font-family:system-ui}
+      #ui{position:fixed;top:8px;left:8px;z-index:2;font-size:14px}
+      #msg{position:fixed;inset:auto 0 16px 0;text-align:center;opacity:.9;font-size:13px}
+      canvas{display:block;width:100vw;height:100vh}
+    </style>
+  </head>
+  <body>
+    <div id="ui">Score: <span id="score">0</span> · Vidas: <span id="lives">3</span></div>
+    <div id="msg">Mové con ← → o tocá izquierda/derecha. Juntá CVs (📄), evitá facturas (💸).</div>
+    <canvas id="game"></canvas>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
